@@ -1,0 +1,19 @@
+# Remove comments to include tests. Run with:
+#
+#   java -jar lib/junit-platform-console-standalone-1.9.2.jar -cp "${CLASSPATH}" \
+#        $(grep -v '^#' tests.run)
+
+
+--select-class application.streams.Streams_0_always_pass_Test
+
+--select-class application.streams.Streams_1_tenRandomNumbers_Tests
+--select-class application.streams.Streams_2_tenEvenRandomNumbers_Tests
+--select-class application.streams.Streams_3_tenSortedEvenRandomNumbers_Tests
+--select-class application.streams.Streams_4_filteredNumbers_Tests
+
+--select-class application.streams.Streams_5_filteredNames_Tests
+--select-class application.streams.Streams_6_sortedNames_Tests
+--select-class application.streams.Streams_7_sortedNamesByLength_Tests
+
+--select-class application.streams.Streams_8_calculateOrderValue_Tests
+--select-class application.streams.Streams_9_sortByOrderValue_Tests
